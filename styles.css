@@ -401,8 +401,8 @@ footer {
 .social-icons-container {
   position: fixed;
   z-index: 999;
-  top: 45%;
-  left: 1%;
+  top: 48%;
+  transform: translate(30%, -50%);
 }
 
 .social-icons-box {
