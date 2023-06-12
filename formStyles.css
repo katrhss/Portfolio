@@ -122,21 +122,26 @@ form textarea {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 
   .form-close-icon {
-    fill: #cbc7e5;
+    color: #cbc7e5;
   }
 }
 
 .form-close-icon {
-  transition: all 0.3s;
-  fill: #272838;
-}
-.form-close-icon-hover {
-  fill: red;
+  display: block;
+  transition: color 0.3s;
+  color: #272838;
+  width: 2.4rem;
+  height: 2.4rem;
+  font-size: 2.4rem;
 }
 
 .display-form {
   visibility: visible;
   transform: translate(-50%, -50%) scale(1);
+}
+
+.hidden {
+  display: none;
 }
 
 .form-info-title,
@@ -152,10 +157,6 @@ form textarea {
   font-weight: 600;
 }
 
-.submit-btn {
-  /* background-color: ; */
-}
-
 .submit-btn:hover,
 .submit-btn:active {
   color: #cbc7e5;
@@ -169,7 +170,7 @@ form textarea {
 }
 
 .submit-btn {
-  transition: all 0.3s;
+  transition: color 0.3s, background-color 0.3s, box-shadow 0.3s;
   cursor: pointer;
   display: inline-block;
   color: #272838;

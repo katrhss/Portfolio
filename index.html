@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -131,7 +133,19 @@
           <div class="container">
             <div class="project-container">
               <div class="project-box">
-                <div class="project-info-box project-box-1">
+                <div
+                  id="box-icon-1"
+                  class="project-links-container grid grid--1-col project-links-left"
+                >
+                  <a
+                    href="https://github.com/katrhss/Local-Eye"
+                    class="project-links"
+                  >
+                    <i class="ph ph-github-logo project-links-icon"></i>
+                    <p>Github Repo</p>
+                  </a>
+                </div>
+                <div id="box-1" class="project-info-box project-box-1">
                   <img
                     src="img/LocalEye-Icon-Small.webp"
                     alt="Local Eye App Icon"
@@ -154,12 +168,30 @@
                   for both its citizens and its tourists. It uses MongoDB for
                   its Database, Cloud Services like Google Cloud and Cloudinary
                   and node.js for its Backend functions. You can see more about
-                  the app or even download it from its GitHub Repository,
-                  <a href="#"> here</a>
+                  the app or even download it from its GitHub Repository.
                 </p>
               </div>
               <div class="project-box">
-                <div class="project-info-box project-box-2">
+                <div
+                  id="box-icon-2"
+                  class="project-links-container grid grid--2-cols project-links-right"
+                >
+                  <a
+                    href="https://github.com/katrhss/Portfolio"
+                    class="project-links"
+                  >
+                    <i class="ph ph-github-logo project-links-icon"></i>
+                    <p>Github Repo</p>
+                  </a>
+                  <a
+                    href="https://katrhss.github.io/Portfolio/"
+                    class="project-links"
+                  >
+                    <i class="ph ph-globe-simple project-links-icon"></i>
+                    <p>Website</p>
+                  </a>
+                </div>
+                <div id="box-2" class="project-info-box project-box-2">
                   <img
                     src="img/Portfolio-Logo-Small.webp"
                     alt="Portfolio Website Logo"
@@ -183,7 +215,26 @@
                 </p>
               </div>
               <div class="project-box">
-                <div class="project-info-box project-box-3">
+                <div
+                  id="box-icon-3"
+                  class="project-links-container grid grid--2-cols project-links-left"
+                >
+                  <a
+                    href="https://github.com/katrhss/Omnifood-Project"
+                    class="project-links"
+                  >
+                    <i class="ph ph-github-logo project-links-icon"></i>
+                    <p>Github Repo</p>
+                  </a>
+                  <a
+                    href="https://katrhss.github.io/Omnifood-Project/"
+                    class="project-links"
+                  >
+                    <i class="ph ph-globe-simple project-links-icon"></i>
+                    <p>Website</p>
+                  </a>
+                </div>
+                <div id="box-3" class="project-info-box project-box-3">
                   <img
                     src="img/omnifood-logo.webp"
                     alt="Local Eye App Icon"
@@ -202,10 +253,9 @@
                 <p class="project-details">
                   When I started working in web development, the Omnifood
                   website was my first big project. It's a website for a
-                  start-up company that offers food subscriptions. The company
-                  is completely fictional and anything related to real life is a
-                  coincidental. You can see the website in the following link,
-                  <a href="#">here</a>
+                  start-up company that offers food subscriptions, built with
+                  HTML CSS and JavaScript. The company is completely fictional
+                  and anything related to real life is purely coincidental.
                 </p>
               </div>
             </div>
@@ -318,7 +368,6 @@
               Have something in mind? I'd be glad to help! Let's get in touch
               and talk more details over some coffee. Drinks on me!
             </p>
-            <!-- <a href="#" id="test" class="get-in-touch">Get in Touch!</a> -->
             <button class="get-in-touch" type="button">Get in Touch!</button>
           </div>
         </section>
@@ -333,52 +382,23 @@
     </div>
     <div class="social-icons-container">
       <div class="social-icons-box">
-        <a href="https://github.com/katrhss">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="40"
-            height="40"
-            fill="#cbc7e5"
-            viewBox="0 0 256 256"
-            class="social-icons"
-          >
-            <path
-              d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z"
-            ></path>
-          </svg>
+        <a href="https://github.com/katrhss" class="social-icons-link">
+          <i class="ph ph-github-logo social-icons"></i>
         </a>
       </div>
 
       <div class="social-icons-box">
-        <a href="https://www.linkedin.com/in/konstantinos-katris-696704251/"
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="40"
-            height="40"
-            fill="#cbc7e5"
-            viewBox="0 0 256 256"
-            class="social-icons"
-          >
-            <path
-              d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24ZM96,176a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0ZM88,96a12,12,0,1,1,12-12A12,12,0,0,1,88,96Zm96,80a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140Z"
-            ></path></svg
+        <a
+          href="https://www.linkedin.com/in/konstantinos-katris-696704251/"
+          class="social-icons-link"
+        >
+          <i class="ph-fill ph-linkedin-logo social-icons"></i
         ></a>
       </div>
       <div class="social-icons-box">
-        <a
-          href="mailto:kkatris@outlook.com?subject=Mail%20from%20Portfolio%20Website"
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="40"
-            height="40"
-            fill="#cbc7e5"
-            class="social-icons"
-            viewBox="0 0 256 256"
-          >
-            <path
-              d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM203.43,64,128,133.15,52.57,64ZM216,192H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z"
-            ></path></svg
-        ></a>
+        <a href="https://www.instagram.com/katrhs_/" class="social-icons-link">
+          <i class="ph ph-instagram-logo social-icons"></i>
+        </a>
       </div>
     </div>
     <div id="form" class="form container">
@@ -390,17 +410,7 @@
         method="post"
       >
         <span class="form-close close-hover"
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            fill="#ffffff"
-            viewBox="0 0 256 256"
-            class="form-close-icon close-hover"
-          >
-            <path
-              d="M208.49,191.51a12,12,0,0,1-17,17L128,145,64.49,208.49a12,12,0,0,1-17-17L111,128,47.51,64.49a12,12,0,0,1,17-17L128,111l63.51-63.52a12,12,0,0,1,17,17L145,128Z"
-            ></path></svg
+          ><i class="ph-bold ph-x form-close-icon close-hover"></i
         ></span>
         <fieldset id="fs-frm-inputs">
           <div class="form-info-title form-label">
@@ -441,7 +451,9 @@
           />
         </fieldset>
         <!-- <input type="submit" value="Submit" /> -->
-        <button type="submit" class="submit-btn">Submit</button>
+        <button type="submit" id="submit-btn" class="submit-btn" hidden>
+          Submit
+        </button>
         <input type="hidden" name="_captcha" value="false" />
         <input
           type="hidden"

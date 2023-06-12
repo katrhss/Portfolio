@@ -194,6 +194,8 @@ h2 {
   grid-template-columns: 1fr 1fr;
   column-gap: 2.4rem;
   margin-bottom: 9.6rem;
+
+  position: relative;
 }
 
 .project-info-box {
@@ -437,23 +439,31 @@ footer {
 }
 
 .social-icons-box {
-  margin-bottom: 4px;
+  margin-bottom: 1.2rem;
+}
+
+.social-icons-link {
+  text-decoration: none;
 }
 
 .social-icons {
   padding: 4px;
   border-radius: 100px;
   background-color: #3b3370;
+  color: #cbc7e5;
+  width: 4rem;
+  height: 4rem;
+  font-size: 3.2rem;
 }
 
 .social-icons:hover {
-  fill: white;
+  color: white;
   background-color: #4a408c;
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
 }
 
 .blur {
-  filter: blur(0.4rem);
+  filter: blur(0.8rem);
 }
 
 /** SUCCESSFUL FORM PAGE **/
@@ -563,4 +573,67 @@ footer {
 
 .go-back-icon-move {
   transform: translate(-3.1rem);
+}
+
+/**--------------------**/
+.project-links-container {
+  position: absolute;
+
+  visibility: hidden;
+}
+
+.project-links-left {
+  top: 50%;
+  left: 23%;
+  transform: translate(-23%, -50%);
+  z-index: 900;
+}
+
+.project-links-right {
+  top: 50%;
+  right: 10%;
+  transform: translate(-23%, -50%);
+  z-index: 900;
+}
+
+.project-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.project-links:link,
+.project-links:visited {
+  text-decoration: none;
+}
+.project-links p {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.project-links:hover,
+.project-links:active {
+  color: #47454a;
+  .project-links-icon {
+    color: white;
+    background-color: #4a408c;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.project-links-icon {
+  padding: 4px;
+  border-radius: 100px;
+  background-color: #3b3370;
+  color: #cbc7e5;
+  width: 4rem;
+  height: 4rem;
+  font-size: 3.2rem;
+}
+
+.set-visible {
+  visibility: visible;
 }
