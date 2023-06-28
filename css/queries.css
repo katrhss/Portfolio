@@ -3,3 +3,58 @@
     font-size: 56.5%;
   }
 }
+
+@media (max-width: 69em) {
+  html {
+    font-size: 50%;
+  }
+
+  .development-container {
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    /* padding: 1.2rem; */
+  }
+
+  .box-3 {
+    grid-column: 1/-1;
+  }
+
+  .box-3 p {
+    margin: 0 20rem 1.6rem;
+  }
+
+  .dev-divider {
+    grid-row: 3/4;
+    grid-column: 1/-1;
+    width: 4%;
+  }
+
+  .dev-tools {
+    grid-row: 4/5;
+    grid-column: 1/-1;
+  }
+
+  .project-titles {
+    font-size: 3.4rem;
+  }
+}
+
+@media (max-width: 57em) {
+  .project-container {
+    padding: 0 22rem;
+  }
+  .project-box {
+    grid-template-columns: 1fr;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .project-info-box {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+  }
+  .project-details {
+    grid-row: 2/3;
+  }
+}
