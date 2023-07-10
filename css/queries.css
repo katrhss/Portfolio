@@ -132,6 +132,13 @@
 }
 
 @media (max-width: 34em) {
+  .project-links-left,
+  .project-links-right {
+    top: 30%;
+    left: 50%;
+    right: 20%;
+  }
+
   .lets-work-container {
     grid-template-columns: 1fr;
     justify-content: center;

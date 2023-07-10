@@ -588,8 +588,8 @@ footer {
 /**--------------------**/
 .project-links-container {
   position: absolute;
-
   visibility: hidden;
+  pointer-events: none;
 }
 
 .project-links-left {
@@ -651,4 +651,5 @@ footer {
 
 .set-visible {
   visibility: visible;
+  pointer-events: auto;
 }
